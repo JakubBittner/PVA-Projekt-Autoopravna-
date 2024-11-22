@@ -1,0 +1,169 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e5e5e5;
+    color: #333;
+}
+
+
+nav {
+    background-color: #1f1f1f;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: cen;
+}
+
+nav .logo {
+    font-size: 2rem;
+    transition: transform 0.3s;
+}
+
+nav .logo:hover {
+    transform: rotate(15deg);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+    transform: scale(1.5);
+}
+
+header {
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(24, 24, 24);
+}
+
+header h1, header p {
+    position: relative;
+    z-index: 1;  /*výška na ose z */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #f0a500;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header p {
+    font-size: 1.3rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+
+
+section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-us {
+    text-align: justify;
+}
+
+.about-us p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.about-us a {
+    color: #f0a500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-us a:hover {
+    text-decoration: underline;
+}
+
+/* Sekce CTA */
+.cta {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    margin: auto;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f0a500;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Parallax sekce */
+#parallax {
+    background-image:url(../img/zach-zook-0yoKiuukRQg-unsplash.jpg);
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Patka stránky */
+footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    color: #ffffff;
+}
+
+        
+      
+    
